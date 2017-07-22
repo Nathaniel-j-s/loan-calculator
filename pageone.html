@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unlimited</title>
+	<link rel="stylesheet" href="./pageone.css" />
+</head>
+<body>
+
+  <div class="initial"> <!-- Initial loan input and term selection. -->
+    <p class="init-title">Loan Calculator</p>
+    <p class="init-text">How much of a loan do you need?</p>
+    <input class="init-input" type="text" id="loanamount" value="" placeholder="Loan Amount">
+    <br />
+    <p class="init-text">Select a term for your loan:</p>
+    <select id="loanperiod">
+      <option value="1">12 months</option>
+      <option value="1.5">18 months</option>
+      <option value="2">24 months</option>
+    </select>
+    <button onclick="calcStuff()" class="calc-button">Calculate!</button>
+  </div>
+  <div class="calced"> <!-- Grand reveal of final cost and monthly payments. -->
+    <p id="totalcost"></p>
+    <br />
+    <p id="monthly"></p>
+  </div>
+  <div class="intro"> <!-- Detailed introduction. -->
+    <p class="intro-title">A Title for this Website!</p> <!-- You may notice I don't use heading tags here. The CSS reset I use turns all heading tags into the equivalent of p tags. -->
+    <p class="intro-sub">And below, a summary of what it does!</p>
+    <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas aliquam elit posuere pretium. Nunc finibus volutpat urna sed ultricies. Etiam fermentum, orci non ullamcorper ornare, augue erat efficitur dui, nec fermentum lorem augue a ligula. Curabitur vitae hendrerit neque. Praesent tristique congue porttitor. Sed ligula nulla, mattis a ante a, scelerisque aliquam libero. Nam volutpat, est vel tincidunt sodales, leo ex euismod erat, at mollis justo tortor a dolor. Cras felis ligula, mollis sit amet risus ac, varius ornare augue. Curabitur cursus luctus ex. Aliquam malesuada, turpis ut faucibus malesuada, ex sapien molestie eros, quis varius lacus arcu maximus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla quam est, blandit varius tellus pellentesque, mollis aliquam erat. Aliquam tincidunt metus scelerisque tortor porttitor, a pretium leo pulvinar.</p>
+    <br />
+    <p class="intro-text">Proin euismod fermentum fermentum. Nunc tristique id ipsum sed facilisis. Fusce lacinia dui ac diam semper suscipit. Maecenas aliquam sapien turpis, iaculis vulputate ipsum convallis at. Etiam laoreet vehicula varius. Mauris sit amet tempor urna. Nam rhoncus metus id est fringilla, vel fermentum sem eleifend. Praesent euismod turpis ut enim consectetur laoreet. Duis elit urna, malesuada vel ante non, commodo porttitor tellus. Quisque eleifend turpis nulla, tristique commodo ante malesuada eu.</p>
+  </div>
+
+  <div class="formentry" id="formentry"> <!-- "Form" for client information. I'm not a big fan of <form> tags. -->
+    <p class="entry-title">Name</p>
+    <input class="entry-input" type="text" id="clientname" value="" placeholder="Name">
+    <p class="entry-title">Phone</p>
+    <input class="entry-input" type="text" id="clientphone" value="" placeholder="Format: 123-123-1234">
+    <p class="entry-title">Email</p>
+    <input class="entry-input" type="text" id="clientemail" value="" placeholder="Email">
+    <p class="entry-title">Zip Code</p>
+    <input class="entry-input" type="text" id="clientzip" value="" placeholder="Zip Code">
+    <p class="entry-text">If you appreciate our low interest rate, enter your information here and we'll find out which office you should visit.</p>
+    <button class="submit-button" type="submit" onclick="validateClient()">Submit</button>
+  </div>
+
+  <div class="validation"> <!-- Validation result. -->
+    <p class="validationresult" id="failuremessage">Sorry, there's a problem with the information provided above. Please review it.</p>
+    <p class="validationresult" id="successmessage">Everything looks good! Thank you for entering your information. <a id="nextpage" href="pagetwo.html">Click here</a> to see which of our offices to get in contact with.</p>
+  </div>
+
+	<script src="./jquery.js"></script>
+  <script src="./pageone.js"></script> <!-- Renamed files last second. It felt weird to have an index.html, app.js, result.html, and result.js. -->
+</body>
+</html>

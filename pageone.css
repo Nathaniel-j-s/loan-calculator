@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End of CSS reset. Custom CSS below.*/
+body {
+  background-color: rgb(233, 233, 233);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.initial {
+  background-color: white;
+  width: 30%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 100%;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.init-title {
+  font-size: 150%;
+  color: rgb(118, 144, 187);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.init-text {
+  color: rgb(91, 91, 91);
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.init-input {
+  margin-bottom: 5px;
+}
+
+.calc-button {
+  margin-left: 15px;
+}
+
+.intro {
+  font-size: 110%;
+  width: 60%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.intro-title {
+  font-size: 310%;
+  color: rgb(118, 144, 187);
+  text-align: center;
+	margin-bottom: 10px;
+}
+
+.intro-sub {
+  font-size: 170%;
+  color: rgb(118, 144, 187);
+  text-align: center;
+	margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 110%;
+  color: rgb(91, 91, 91);
+  line-height: 22px;
+}
+
+.calced {
+  background-color: white;
+  color: rgb(91, 91, 91);
+  width: 30%;
+  position: absolute;
+  top: 168px;
+  left: 15px;
+  font-size: 100%;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.formentry {
+  background-color: white;
+  color: rgb(91, 91, 91);
+  width: 30%;
+  position: absolute;
+  top: 281px;
+  left: 15px;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.entry-title {
+  width: 30%;
+  margin-bottom: 5px;
+}
+
+.entry-input {
+  margin-bottom: 10px;
+}
+
+.entry-text {
+  position: absolute;
+  width: 55%;
+  top: 30px;
+  right: 10px;
+  line-height: 20px;
+}
+
+.submit-button {
+  width: 40%;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  font-size: 150%;
+}
+
+.validation {
+  background-color: white;
+  color: rgb(91, 91, 91);
+  width: 30%;
+  position: absolute;
+  top: 514px;
+  left: 15px;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+}

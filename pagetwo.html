@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selected Office</title>
+	<link rel="stylesheet" href="./pagetwo.css" />
+</head>
+<body>
+  <table class="whole-table"> <!-- Table for client's information. -->
+    <tr> <!-- Row 1: Name and Requested Loan Amount. -->
+      <td> <!-- I might not like <form> tags, but <table> is fine. -->
+        <p>Name:</p>
+      </td>
+      <td>
+        <p id="clientname"></p>
+      </td>
+      <td>
+        <p>Requested Loan Amount:</p>
+      </td>
+      <td>
+        <p id="clientinitial"></p>
+      </td>
+    </tr>
+    <tr> <!-- Row 2: Phone and Loan Period. -->
+      <td>
+        <p>Phone:</p>
+      </td>
+      <td>
+        <p id="clientphone"></p>
+      </td>
+      <td>
+        <p>Loan Period:</p>
+      </td>
+      <td>
+        <p id="clienttime"></p>
+      </td>
+    </tr>
+    <tr> <!-- Row 3: Email and Total Loan Amount w/ Interest. -->
+      <td>
+        <p>Email:</p>
+      </td>
+      <td>
+        <p id="clientemail"></p>
+      </td>
+      <td>
+        <p>Total Loan Amount w/ Interest:</p>
+      </td>
+      <td>
+        <p id="clientloan"></p>
+      </td>
+    </tr>
+    <tr> <!-- Row 4: Zip and Minimum Monthly Payment. -->
+      <td>
+        <p>ZIP:</p>
+      </td>
+      <td>
+        <p id="clientzip"></p>
+      </td>
+      <td>
+        <p>Minimum Monthly Payment:</p>
+      </td>
+      <td>
+        <p id="clientmonth"></p>
+      </td>
+    </tr>
+  </table>
+
+	<div class="zip-result"> <!-- Office selection result. -->
+	  <p class="officeoption" id="successfulzip">Based on the zip code you have provided, this is the closest office available to you.</p>
+	  <p class="officeoption" id="officeone"><strong>Store 1:</strong> 123 Loan St, Reno, NV, 89502</p>
+	  <p class="officeoption" id="officetwo"><strong>Store 2:</strong> 123 Money St, Sparks, NV, 89431</p>
+	  <p class="officeoption" id="officethree"><strong>Store 3:</strong> 123 Interest St, Provo, UT, 04604</p>
+	  <p class="officeoption" id="nooffice">Sorry, but there is no office serving in your location. We serve the zip codes <strong>89502</strong>, <strong>89431</strong>, and <strong>04604</strong>.</p>
+	</div>
+	<div> <!-- Message that just didn't seem to fit in the last div. -->
+	  <p>Is something incorrect? <a href="pageone.html">Click here</a> to start over.</p>
+	</div>
+
+  <script src="./jquery.js"></script>
+  <script src="./pagetwo.js"></script>
+</body>
+</html>
